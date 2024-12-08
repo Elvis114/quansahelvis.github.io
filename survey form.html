@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="form styles.css">
+    <title>Kcobby's Survey Form</title>
+<body>
+    <h1 id="title" class="h1">Kcobby's Survey Form</h1>
+    <p id="description" class="p">Fill in the required details below:</p>
+
+    <form id="survey-form">
+  <fieldset class="fieldset">
+      <label id="name-label" for="name">Full Name:<input class="font" type="text" id="name" placeholder="Enter full name.." required></label>
+      <label id="email-label" for="email">Email:<input class="font" type="email" id="email" placeholder="Enter valid email.." required></label>
+      <label id="number-label" for="age">Age:<input class="font" type="number" id="number" placeholder="Enter Age.." min="12" max="95" required></label>
+      <label id="password-label" for="password">Password:<input class="font" type="password" id="password" placeholder="Enter password.." required></label>
+      </fieldset>
+      <fieldset class="fieldset">
+           <p class="choice">Which aspect of field do you want to master?</p>
+  <label for="radio"><input class="prefer" type="radio" id="select-choice" value="web-programming" name="choice" >Web-programming</label>  
+    <label><input class="prefer" type="radio" id="select-choice" value="mobile-application" name="choice" >Mobile-application</label>  
+    <label><input class="prefer"type="radio" id="select-choice" value="cyber-security" name="choice" >Cyber Security</label>
+    <label><input class="prefer" type="radio" id="select-choice" value="others" name="choice" >Others</label>
+          </fieldset> 
+          <fieldset class="fieldset">
+    <p class="learning-way">What's your way of learning?</p>
+
+    <select class="option" id="dropdown" name="way" required="">
+        <option disabled="" selected="" value="">Select way of learning</option>
+        <option enable="" select="" value="reading-of-slides">Reading of slides</option>
+        <option enable="" select="" value="videos">videos</option>
+        <option enable="" select="" value="online-platforms">Online platforms</option>
+        <option enable="" select="" value="prefer not to say">Prefer not to say</option>
+        <option enable="" select="" value="others">Others</option>
+    </select>
+
+</fieldset> 
+<fieldset class="fieldset">   
+    <p>Are you willing to this journey with us?</p>
+        <label><input type="checkbox" value="yes" name="prefer"class="select" checked>YES</label>
+        <label><input type="checkbox" value="no" name="prefer" class="select" >NO</label>
+         <p>Any comment or suggestion?</p>
+    <textarea class="textarea"id="comments" name="comment" placeholder="Enter your comment here..." style="height: 17px;"></textarea>
+</fieldset>
+<fieldset class="fieldset">
+    <button class="button"id="submit" type="submit" value="submit">Submit</button>
+</fieldset>
+
+    
+    </form>
+</body>
